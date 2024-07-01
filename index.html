@@ -6,37 +6,50 @@
     <title>Text Decoder by Saraivx</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">    
 </head>
+
 <body>
+    <main>
+        <!---->       
+        <div id="main-content"> <!--content main area --> 
+            <form>
+            <div id ="input-area-div" class="divPattern">
+                <img height="80em" src="logo-img/logo-img.png" alt="">
+                <h1 class="superTitle">Text Coder/Decoder by Saraivx.</h1>
+                <h1 class="titles">Input the text will encrypted here</h1>
+            <textarea id="inputText"></textarea>
+            <div id="buttons-area">
+                <button type="button" onclick="encryptText(), copyButton()" id="encrypt">Encrypt</button>
+                <button type="button" onclick="unencryptText(), copyButton()" id="unencrypt">Decrypt</button>
+                <button type="button" hidden onclick="copyToClipboard()" id="copyClipboard">Copy</button>
+            </form>       
+            </div>
 
-<main>
-
-    <!---->   
-    <nav> <!--"header" area, includes logo-->   
-        <img height="100vh" src="logo-img/logo-img.png" alt="">
-
-    </nav>
-    <div id="main-content"> <!--content main area -->   
-        <div id ="input-area-div">
-        <label for="input">Input the text will encrypted here</label><br>
-        <input id="input-area-text" type="text">
+            </div>
+                
         </div>
-
-        <div id="buttons-area">
-        <button id="encrypt">Encrypt</button>
-        <button id="unencrypt">Unencrypt</button>
-        </div>
-    </div>
-    <aside> <!--side bar area-->   
-        <header>
-            <h1>Result area</h1>
-        </header>
-        <main>
-
-        </main>
-    </aside>
-        
-
-</main>
+        <aside class="divPattern"> <!--side bar area-->   
+            <header>
+                <h1 class="superTitle">Result area</h1>
+            </header>
+            <main>
+                <p style="text-align: start;" id="returnArea">
+                    Oops.. <br>
+                    It looks like you haven't started yet.. <br>
+                    To start, type the text that will be encrypted or decrypted next to it!
+                    <img src="" alt="">
+</p>
+            </main>
+        </aside>
+            
+    
+    </main>
 </body>
 </html>
