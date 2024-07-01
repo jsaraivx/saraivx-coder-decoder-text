@@ -11,3 +11,6 @@
 
 ## Funcionalidades a serem adicionadas.
 >Futuramente adicionarei um botão copiar para área de tranferências.
+
+# Link to test:
+https://saraivx-coder-decoder-text.vercel.app/
