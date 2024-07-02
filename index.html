@@ -26,8 +26,8 @@
                 <h1 class="titles">Input the text will encrypted here</h1>
             <textarea id="inputText"></textarea>
             <div id="buttons-area">
-                <button type="button" onclick="encryptText(), copyButton()" id="encrypt">Encrypt</button>
-                <button type="button" onclick="unencryptText(), copyButton()" id="unencrypt">Decrypt</button>
+                <a href="#resultAreaDiv"><button type="button" onclick="encryptText(), copyButton()" id="encrypt">Encrypt</button>
+               <button type="button" onclick="unencryptText(), copyButton()" id="unencrypt">Decrypt</button></a> 
                 <button type="button" hidden onclick="copyToClipboard()" id="copyClipboard">Copy</button>
             </form>       
             </div>
@@ -37,7 +37,7 @@
             </div>
                 
         </div>
-        <aside class="divPattern"> <!--side bar area-->   
+        <aside id="resultAreaDiv" class="divPattern"> <!--side bar area-->   
             <header>
                 <h1 class="superTitle">Result area</h1>
             </header>

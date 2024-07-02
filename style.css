@@ -30,8 +30,8 @@ color: white;
 }
 main{
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
+    max-width: 100vw;
 }
 #main-content{
     display: flex;
