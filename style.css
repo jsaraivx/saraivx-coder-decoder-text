@@ -1,9 +1,14 @@
+:root{
+    --background-dark : #1d1d1d;
+    --font-primary : "Inter Tight", sans-serif;
+}
+
 body{
-    background-color: #1d1d1d;
+    background-color: var(--background-dark);
     background-image: url('bg-img.jpg');
     background-size: cover;
     background-repeat: no-repeat;
-    font-family: "Inter Tight", sans-serif;
+    font-family: var(--font-primary);
 
 }
 @media screen and (max-width: 450px) {
@@ -46,7 +51,7 @@ main{
     font-size: 24pt;
 }
 textarea{
-    font-family: "Inter Tight", sans-serif;
+    font-family: var(--font-primary)
     border-radius: 1em;
     font-size: large;
     padding: 0.5em;
@@ -65,7 +70,7 @@ textarea{
     
 }
 #buttons-area button{
-    font-family: "Inter Tight", sans-serif;
+    font-family: var(--font-primary)
     font-size: 1em;
     padding: 10px 15px 10px 15px;
     border-radius: 6px;
@@ -93,7 +98,6 @@ aside{
 }
 aside h1{
     font-size: 24pt;    
-}
 }
 
 @media screen and (min-width:450px){
@@ -145,7 +149,7 @@ main{
     font-size: 28pt;
 }
 textarea{
-    font-family: "Inter Tight", sans-serif;
+    font-family: var(--font-primary)
     border-radius: 1em;
     font-size: large;
     padding: 0.5em;
@@ -161,7 +165,7 @@ textarea{
     justify-content: start;
 }
 #buttons-area button{
-    font-family: "Inter Tight", sans-serif;
+    font-family: var(--font-primary)
     font-size: 1em;
     padding: 4px 20px 4px 20px;
     border-radius: 6px;
