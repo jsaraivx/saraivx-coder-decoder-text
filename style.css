@@ -6,7 +6,7 @@ body{
     font-family: "Inter Tight", sans-serif;
 
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 450px) {
     
 .superTitle{
     font-size: 20pt;
@@ -61,6 +61,8 @@ textarea{
     gap: 1em;
     justify-content: start;
     align-items: flex-end;
+    text-decoration: none;
+    
 }
 #buttons-area button{
     font-family: "Inter Tight", sans-serif;
@@ -94,7 +96,7 @@ aside h1{
 }
 }
 
-@media screen and (min-width:430px){
+@media screen and (min-width:450px){
 
 .superTitle{
     font-size: 20pt;
@@ -193,4 +195,7 @@ aside{
 aside h1{
     font-size: 28pt;    
 }
+}
+#buttons-area a{
+    color: #12121200;
 }

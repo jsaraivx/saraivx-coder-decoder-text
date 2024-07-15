@@ -17,6 +17,8 @@ function encryptText(inputedText)
     console.log(`the decoded text is: ${codedText}`);
     //codification output area and inject HTML 
     document.getElementById('returnArea').innerHTML = codedText;
+    resultText = codedText;
+    return resultText;
 }
 
 function unencryptText(encryptedText)
@@ -32,15 +34,17 @@ function unencryptText(encryptedText)
     console.log(`the decoded text is: ${decodedText}`);
     //codification output area and inject HTML 
     document.getElementById('returnArea').innerHTML = decodedText;
-    return decodedText;
+    resultText = decodedText
+    return resultText;
+    
 }
 function copyToClipboard()
 {
-    let copyTextToClipboard = document.getElementById('inputText').value;
-    copyTextToClipboard.select();
-    copyTextToClipboard.setSelectionRange(0, 99999);
-
-    navigator.clipboard.writeText(copyTextToClipboard.value);
+    let textResulted = document.getElementById('inputText').value;
+    textResulted.select();
+    textResulted.setSelectionRange(0, 99999);
+    navigator.clipboard.writeText(textResulted.value);
+    alert("");
 }
 
 function copyButton(){ //show copy button 
