@@ -4,7 +4,6 @@
 // "a" == "ai"
 // "o" == "ober"
 // "u" == "ufat"
-
 function encryptText(inputedText) {
   textInputed = document.getElementById("inputText").value;
   codedText = textInputed;
@@ -19,10 +18,15 @@ function encryptText(inputedText) {
   resultText = codedText;
   return resultText;
 }
-
+function hideImage() {
+  imagenotext = document
+    .getElementById("imgNoText")
+    .setAttribute("hidden", " ");
+}
 function unencryptText(encryptedText) {
-  //codification area
+    
   textInputed = document.getElementById("inputText").value;
+  //codification area
   decodedText = textInputed;
   decodedText = decodedText.replaceAll("enter", "e");
   decodedText = decodedText.replaceAll("imes", "i");

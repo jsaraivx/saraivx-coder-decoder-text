@@ -1,9 +1,9 @@
-:root{
-    --background-dark : #1d1d1d;
-    --font-primary : "Inter Tight", sans-serif;
+:root {
+    --background-dark: #1d1d1d;
+    --font-primary: "Inter Tight", sans-serif;
 }
 
-body{
+body {
     background-color: var(--background-dark);
     background-image: url('bg-img.jpg');
     background-size: cover;
@@ -11,195 +11,267 @@ body{
     font-family: var(--font-primary);
 
 }
+
 @media screen and (max-width: 450px) {
-    
-.superTitle{
-    font-size: 20pt;
-    color: white;
+
+    .superTitle {
+        font-size: 20pt;
+        color: white;
+    }
+
+    .titles {
+        font-size: 12pt;
+        color: white;
+    }
+
+    .divPattern {
+        border-radius: 2em;
+        padding: 2em;
+        background-color: #282828db;
+        backdrop-filter: blur(2px);
+        color: #FFFFFF;
+    }
+
+    #imgArea {
+        display: flex;
+        width: 5vw;
+        margin: 0%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        max-width: 100vw;
+    }
+
+    #main-content {
+        display: flex;
+        flex-direction: column;
+        padding: 1em 0em 1em 0em;
+    }
+
+    #input-area-div {
+        color: white;
+    }
+
+    #input-area-div input {
+        padding-right: 20vw;
+        font-size: 24pt;
+    }
+
+    textarea {
+        font-family: var(--font-primary) border-radius: 1em;
+        font-size: large;
+        padding: 0.5em;
+        resize: none;
+        height: 20vh;
+        width: 60vw;
+    }
+
+    #buttons-area {
+        margin: 0px;
+        padding-top: 0.5em;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: start;
+        align-items: flex-end;
+        text-decoration: none;
+
+    }
+
+    #buttons-area button {
+        font-family: var(--font-primary) font-size: 1em;
+        padding: 10px 15px 10px 15px;
+        border-radius: 6px;
+        border-style: none;
+        color: #E1EAF8;
+    }
+
+    #buttons-area button:hover {
+        cursor: pointer;
+    }
+
+    #encrypt {
+        background-color: #61C554;
+    }
+
+    #unencrypt {
+        background-color: #ED6A5F;
+    }
+
+    #copyClipboard {
+        background-color: #121212;
+    }
+
+    aside {
+        border-radius: 14px;
+        width: 80vw;
+        background-color: #252525d5;
+        backdrop-filter: blur(10px);
+        text-align: start;
+    }
+
+    aside h1 {
+        font-size: 24pt;
+    }
 }
-.titles{
-font-size: 12pt;
-color: white;
+
+@media screen and (min-width:450px) {
+
+    .superTitle {
+        font-size: 20pt;
+        color: white;
+    }
+
+    .titles {
+        font-size: 16pt;
+        color: white;
+    }
+
+    .divPattern {
+        border-radius: 2em;
+        padding: 2em;
+        background-color: #282828db;
+        backdrop-filter: blur(2px);
+        color: #FFFFFF;
+    }
+
+    #imgArea {
+        display: flex;
+        justify-content: center;
+        width: 5vw;
+        background-color: red;
+        margin: 0%;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    #main-content {
+        height: 100%;
+        width: 70vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    #input-area-div {
+
+        color: white;
+    }
+
+    #input-area-div input {
+        padding-right: 20vw;
+        font-size: 28pt;
+    }
+
+    textarea {
+        font-family: var(--font-primary) border-radius: 1em;
+        font-size: large;
+        padding: 0.5em;
+        resize: none;
+        height: 40vh;
+        width: 60vw;
+    }
+
+    #buttons-area {
+        margin: 0px;
+        padding-top: 0.5em;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+        justify-content: start;
+    }
+
+    #buttons-area button {
+        font-family: var(--font-primary) font-size: 1em;
+        padding: 4px 20px 4px 20px;
+        border-radius: 6px;
+        border-style: none;
+        color: #E1EAF8;
+
+    }
+
+    #buttons-area button:hover {
+        cursor: pointer;
+    }
+
+    #encrypt {
+        background-color: #61C554;
+        backdrop-filter: blur(6px);
+
+    }
+
+    #unencrypt {
+        background-color: #ED6A5F;
+    }
+
+    #copyClipboard {
+        background-color: #121212;
+    }
+
+    aside {
+        border-radius: 14px;
+        width: 20vw;
+        height: 85vh;
+        background-color: #252525d5;
+        backdrop-filter: blur(10px);
+        margin-top: 2em;
+        text-align: center;
+
+    }
+
+    aside h1 {
+        font-size: 28pt;
+    }
 }
-.divPattern{
-    border-radius: 2em;
-    padding: 2em;
-    background-color: #282828db;
-    backdrop-filter: blur(2px);
-    color: #FFFFFF;
+
+#buttons-area a {
+    color: #12121200;
 }
-#imgArea{
-    display: flex;
-    width: 5vw;
-    margin: 0%;
+
+#imgNoText {
+    width: 15em;
 }
-main{
+
+aside main {
     display: flex;
     flex-direction: column;
-    max-width: 100vw;
-}
-#main-content{
-    display: flex;
-    flex-direction: column;
-    padding: 1em 0em 1em 0em;
-}
-#input-area-div{
-    color: white;
-}
-#input-area-div input{
-    padding-right: 20vw;
-    font-size: 24pt;
-}
-textarea{
-    font-family: var(--font-primary)
-    border-radius: 1em;
-    font-size: large;
-    padding: 0.5em;
-    resize: none;
-    height: 20vh; width: 60vw;
-}
-#buttons-area{
-    margin: 0px;
-    padding-top: 0.5em;
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    justify-content: start;
-    align-items: flex-end;
-    text-decoration: none;
-    
-}
-#buttons-area button{
-    font-family: var(--font-primary)
-    font-size: 1em;
-    padding: 10px 15px 10px 15px;
-    border-radius: 6px;
-    border-style: none;
-    color: #E1EAF8;
-}
-#buttons-area button:hover{
-    cursor: pointer;
-}
-#encrypt{
-    background-color: #61C554;
-}
-#unencrypt{
-    background-color: #ED6A5F;
-}
-#copyClipboard{
-    background-color: #121212;
-}
-aside{
-    border-radius: 14px;
-    width: 80vw;
-    background-color: #252525d5;
-    backdrop-filter: blur(10px);
-    text-align: start;
-}
-aside h1{
-    font-size: 24pt;    
-}
-}
-@media screen and (min-width:450px){
-
-.superTitle{
-    font-size: 20pt;
-    color: white;
-}
-
-.titles{
-    font-size: 16pt;
-    color: white;
-}
-.divPattern{
-    border-radius: 2em;
-    padding: 2em;
-    background-color: #282828db;
-    backdrop-filter: blur(2px);
-    color: #FFFFFF;
-}
-#imgArea{
-    display: flex;
-    justify-content: center;
-    width: 5vw;
-    background-color: red;
-    margin: 0%;
-}
-
-main{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
     align-items: center;
 }
 
-#main-content{
-    height: 100%;
-    width: 70vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-#input-area-div{
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
 
-    color: white;
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
-#input-area-div input{
-    padding-right: 20vw;
-    font-size: 28pt;
+
+#imgSaraiva {
+    animation: pulse 1s infinite;
+    animation-duration: 3s;
 }
-textarea{
-    font-family: var(--font-primary)
-    border-radius: 1em;
-    font-size: large;
-    padding: 0.5em;
-    resize: none;
-    height: 40vh; width: 60vw;
-}
-#buttons-area{
-    margin: 0px;
-    padding-top: 0.5em;
-    display: flex;
-    flex-direction: row;
-    gap: 1em;
-    justify-content: start;
-}
-#buttons-area button{
-    font-family: var(--font-primary)
-    font-size: 1em;
-    padding: 4px 20px 4px 20px;
-    border-radius: 6px;
-    border-style: none;
-    color: #E1EAF8;
-    
-}
-#buttons-area button:hover{
+
+#imgSaraiva:hover {
     cursor: pointer;
 }
-#encrypt{
-    background-color: #61C554;
-    backdrop-filter: blur(6px);
 
+#inputText {
+    border-radius: 16px;
 }
-#unencrypt{
-    background-color: #ED6A5F;
-}
-#copyClipboard{
-    background-color: #121212;
-}
-aside{
-    border-radius: 14px;
-    width: 20vw;
-    height: 85vh;
-    background-color: #252525d5;
-    backdrop-filter: blur(10px);
-    margin-top: 2em;
-    text-align: start;
-}
-aside h1{
-    font-size: 28pt;    
-}
-}
-#buttons-area a{
-    color: #12121200;
+
+.buttons:hover {
+    transform: scale(0.98);
 }

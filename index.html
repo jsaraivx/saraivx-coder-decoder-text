@@ -1,59 +1,70 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text Decoder by Saraivx</title>
+    <title>Codificador de Textos feito por Saraiva</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
-    <link  rel="icon" type="image/x-icon" href="https://img.icons8.com/?size=100&id=QUTG5QZNHShx&format=png&color=FFFFFF" >
+    <link rel="icon" type="image/x-icon"
+        href="https://img.icons8.com/?size=100&id=QUTG5QZNHShx&format=png&color=FFFFFF">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@600&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">    
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <main>
-        <!---->       
-        <div id="main-content"> <!--content main area --> 
+        <!---->
+        <div id="main-content"> <!--content main area -->
             <form>
-            <div id ="input-area-div" class="divPattern">
-                <img height="80em" src="logo-img/logo-img.png" alt="">
-                <h1 class="superTitle">Text Coder/Decoder by Saraivx (João Saraiva).</h1>
-                <h1 class="titles">Input the text will encrypted here</h1>
-            <textarea id="inputText"></textarea>
-            <div id="buttons-area">
-                <a href="#resultAreaDiv">
-                <button type="button" onclick="encryptText(), copyButton()" id="encrypt">Encrypt</button>
-                <button type="button" onclick="unencryptText(), copyButton()" id="unencrypt">Decrypt</button>
-                <button type="button" hidden  onclick="copyToClipboard()" id="copyClipboard">Copy</button>
-                </a> 
-            </form>       
-            </div>
-            <div id="credits">
-                    <img style="filter: invert();"  height="80px" src="aluraoracle.png" alt="">
-            </div>
-            </div>
-                
+                <div id="input-area-div" class="divPattern">
+                    <a href="https://github.com/jsaraivx"><img height="80em" id="imgSaraiva" src="logo-img/logo-img.png"
+                            alt=""></a>
+                    <h1 class="superTitle">Codificador / Decodificador de texto</h1>
+                    <textarea placeholder="Você deve digitar aqui o texto a ser codificado / decodificado! =D"
+                        id="inputText"></textarea>
+                    <div id="buttons-area">
+                        <a href="#resultAreaDiv">
+                            <button class="buttons" type="button" onclick="encryptText(), hideImage(), copyButton()"
+                                id="encrypt">Codificar</button>
+                            <button class="buttons" type="button" onclick="unencryptText(), hideImage(), copyButton()"
+                                id="unencrypt">Decodificar</button>
+                            <button class="buttons" type="button" hidden onclick="copyToClipboard(), hideImage()"
+                                id="copyClipboard">Copy</button>
+                        </a>
+            </form>
         </div>
-        <aside id="resultAreaDiv" class="divPattern"> <!--side bar area-->   
+        <div id="credits">
+            <img style="filter: invert();" height="80px" src="aluraoracle.png" alt="">
+        </div>
+        </div>
+
+        </div>
+        <aside id="resultAreaDiv" class="divPattern"> <!--side bar area-->
             <header>
-                <h1 class="superTitle">Result area</h1>
+                <h1 class="superTitle">Área do Resultado</h1>
             </header>
             <main>
-                <p style="text-align: start;" id="returnArea">
-                    Oops.. <br>
-                    It looks like you haven't started yet.. <br>
-                    To start, type the text that will be encrypted or decrypted next to it!
-                    <img src="" alt="">
-</p>
+                <img id='imgNoText'
+                    src="https://cdn.prod.website-files.com/5e51c674258ffe10d286d30a/5e53570264109d16a7014c37_peep-46.svg"
+                    alt="">
+                <p id="returnArea">
+                    Oops..
+                    Parece que você não digitou nada ainda...
+                    Quando você estiver pronto, é só digitar a mensagem que será codificada, e apertar no botão
+                    Codificar!!
+                </p>
+
             </main>
         </aside>
-            
-    
+
+
     </main>
 </body>
+
 </html>
